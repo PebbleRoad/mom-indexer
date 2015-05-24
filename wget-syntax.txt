@@ -1,0 +1,3 @@
+http://www.linuxjournal.com/content/downloading-entire-web-site-wget
+
+wget --recursive -nc -nd --html-extension --domains www.mom.gov.sg --no-parent --show-progress --follow-tags=a www.mom.gov.sg
