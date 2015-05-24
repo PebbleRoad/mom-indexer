@@ -7,6 +7,8 @@ count = 1
 data = []
 
 files.forEach (item) ->
+  # console.log item
+
   contents = fs.readFileSync dir + '/' + item, { encoding: 'utf-8' }
   doc = {}
   $ = cheerio.load contents, { ignoreWhitespace: true }
@@ -26,7 +28,10 @@ files.forEach (item) ->
   doc.subTitles = st if st.length > 0
 
   doc.body = $('#documentcontent_0_DivCode').text().trim()
+
+  doc.url = item.substr(0, item.lastIndexOf('.'))
   
   data.push doc
 
 fs.writeFileSync 'output/data.json', JSON.stringify(data), { encoding: 'utf-8' }
+console.log 'data.json file created..'
