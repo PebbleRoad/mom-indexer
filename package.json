@@ -6,6 +6,10 @@
   "scripts": {
     "start": "coffee app.coffee"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:PebbleRoad/mom-indexer.git"
+  },
   "author": "Ryan Yacyshyn <ryan@pebbleroad.com>",
   "license": "ISC",
   "dependencies": {

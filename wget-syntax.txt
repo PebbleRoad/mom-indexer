@@ -6,3 +6,6 @@ http://www.linuxjournal.com/content/downloading-entire-web-site-wget
 
 
 /usr/local/Cellar/wget/1.16.1/bin/wget -r -nc -nd --html-extension --domains momcorp.internet.dynawebsite.com --no-parent --show-progress --follow-tags=a momcorp.internet.dynawebsite.com
+
+
+wget --recursive -nc -nd --html-extension --domains momcorp.internet.dynawebsite.com --no-parent --show-progress --follow-tags=a momcorp.internet.dynawebsite.com
